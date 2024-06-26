@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Просмотр API</title>
+    <!-- Подключение CSS-стилей для адаптивного дизайна -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Подключение иконок Font Awesome -->
+    <style>
+        /* Обновленные стили */
+        body {
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            text-align: center;
+            color: #666b70;
+        }
+
+        .list-group-item {
+            background-color: #e9ecef;
+            border-color: #dee2e6;
+            border-top: none;
+            border-radius: 0;
+            padding: 15px 20px;
+            transition: background-color 0.3s ease;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .list-group-item a {
+            color: #343a40;
+            text-decoration: none;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .list-group-item a i {
+            margin-right: 10px;
+        }
+
+        .list-group-item:hover {
+            background-color: #cfd8dc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Просмотр API</h1>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="{% url 'Users' %}"><i class="fas fa-users"></i>Пользователи</a></li>
+            <li class="list-group-item"><a href="{% url 'Roles' %}"><i class="fas fa-user-tag"></i>Роли</a></li>
+            <li class="list-group-item"><a href="{% url 'Statuses' %}"><i class="fas fa-project-diagram"></i>
+                    Статусы </a></li>
+            <li class="list-group-item"><a href="{% url 'Projects' %}"><i class="fas fa-project-diagram"></i>
+                    Проекты</a></li>
+            <li class="list-group-item"><a href="{% url 'Priorities' %}"><i class="fas fa-tasks"></i>Приоритеты
+                    </a></li>
+            <li class="list-group-item"><a href="{% url 'Tasks' %}"><i class="fas fa-tasks"></i>Задачи</a></li>
+            <li class="list-group-item"><a href="{% url 'Teams' %}"><i class="fas fa-users"></i>Команды</a></li>
+            <li class="list-group-item"><a href="{% url 'UsersTeams' %}"><i class="fas fa-users"></i>Пользователи в
+                    командах</a></li>
+            <li class="list-group-item"><a href="{% url 'TaskComments' %}"><i class="fas fa-comments"></i>Комментарии к
+                    задачам</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

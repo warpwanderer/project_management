@@ -1,0 +1,94 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.paragraph {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+/* styles.css */
+
+.team-page-container {
+    padding: 20px;
+  }
+  
+  .team-title {
+    margin-bottom: 20px;
+  }
+  
+  .team-member-card {
+    margin-bottom: 20px;
+  }
+  
+  .team-member-avatar {
+    margin-right: 10px;
+  }
+  
+  .team-member-name {
+    font-weight: bold;
+  }
+  
+  .team-member-role {
+    color: #999;
+  }
+  
+
+  .team-page-container {
+    max-width: 1200px;
+    margin: 0 auto ;
+    
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.team-members-container {
+    margin-top: 20px;
+}
+
+.team-member-card {
+    border-radius: 8px;
+}
+
+.invite-button {
+    margin-bottom: 20px;
+}
+
+.team-member-role {
+    display: block;
+    margin-top: 10px;
+}
+
+.custom-editor {
+  width: 100%;
+  height: 730px;
+}
