@@ -141,7 +141,4 @@ const ColumnSection = ({ column, projectId }) => {
   );
 };
 
-
-
-
 export default ColumnSection;
